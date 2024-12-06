@@ -1,22 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class CheckpointEditor : MonoBehaviour
-    {
-
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:28fa38c47fae302cdf8200c8c90e601c06b3f50801bcd509cbff34a35797b15b
+size 339

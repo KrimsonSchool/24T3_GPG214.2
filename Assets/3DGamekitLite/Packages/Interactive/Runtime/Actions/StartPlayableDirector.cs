@@ -1,32 +1,3 @@
-using UnityEngine.Events;
-using UnityEngine.Playables;
-
-namespace Gamekit3D.GameCommands
-{
-    public class StartPlayableDirector : GameCommandHandler
-    {
-        public PlayableDirector director;
-        public UnityEvent OnDirectorPlay;
-        public UnityEvent OnDirectorFinish;
-
-        void Reset()
-        {
-            director = GetComponent<PlayableDirector>();
-        }
-
-        public override void PerformInteraction()
-        {
-            OnDirectorPlay.Invoke ();
-            
-            if (director)
-                director.Play();
-            
-            Invoke ("FinishInvoke", (float)director.duration);
-        }
-
-        void FinishInvoke ()
-        {
-            OnDirectorFinish.Invoke ();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f43689ec634dc2d3ea7714f25d5db41941348cbed021b9de04ebeb23192f2a23
+size 739

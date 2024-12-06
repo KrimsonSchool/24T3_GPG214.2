@@ -1,36 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class Product : MonoBehaviour
-{
-    public RawImage productImage;
-    public TextMeshProUGUI productName;
-    public string productID;
-    [Header("Pos Debug")]
-    public Vector2 pos;
-    public Vector2 localPos;
-    public Vector2 rectPos;
-    public Vector2 rectLocalPos;
-
-    public void InitButton()
-    {
-        GetComponent<Button>().onClick.RemoveAllListeners();
-
-        GetComponent<Button>().onClick.AddListener(() => FindObjectOfType<PurchaseManager>().Purchase(productID));
-
-
-    }
-
-    private void Update()
-    {
-        pos = transform.position;
-        localPos = transform.localPosition;
-        rectPos = GetComponent<RectTransform>().position;
-        rectLocalPos = GetComponent<RectTransform>().anchoredPosition;
-
-        transform.position = pos;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b65784807d5514e5086aecb08358e870b321be6ee7714672c944e36490f2c3b
+size 901

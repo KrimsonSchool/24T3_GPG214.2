@@ -1,19 +1,3 @@
-using UnityEngine;
-
-
-namespace Gamekit3D.GameCommands
-{
-    public class ParticleSystemEmit : GameCommandHandler
-    {
-        public ParticleSystem[] particleSystems;
-        public int count;
-
-        public override void PerformInteraction()
-        {
-            foreach (var ps in particleSystems)
-            {
-                ps.Emit(count);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:24f29a8e49a48f807c78dcd0e81f7109a6ed56d5ca24e64683a633de5828a99e
+size 381

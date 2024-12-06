@@ -1,35 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D.SkyboxVolume
-{
-    [RequireComponent(typeof(Camera))]
-    public class Skybox3D : MonoBehaviour
-    {
-        [Tooltip("The main camera in the scene. If null, Camera.main is used.")]
-        new public Camera camera;
-        [Tooltip("A smaller value here increases the scale of the skybox.")]
-        public float movementCoefficient = 0.01f;
-
-        Camera skyCam;
-        Transform cameraTransform;
-
-        void Start()
-        {
-            camera.clearFlags = CameraClearFlags.Depth;
-            cameraTransform = camera.transform;
-            skyCam = GetComponent<Camera>();
-        }
-
-        void OnPreRender()
-        {
-            if (camera != null)
-            {
-                skyCam.fieldOfView = camera.fieldOfView;
-                transform.rotation = cameraTransform.rotation;
-                transform.localPosition = cameraTransform.position * movementCoefficient;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84ac820a94a34245c3c7ec7f0ddcc3d289c913d1e6d0ee242ec102fb1248abf3
+size 1022

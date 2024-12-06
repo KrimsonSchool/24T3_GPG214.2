@@ -1,20 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class EllenStaffEffect : StateMachineBehaviour
-    {
-        public int effectIndex;
-
-        // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-        override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            PlayerController ctrl = animator.GetComponent<PlayerController>();
-
-            ctrl.meleeWeapon.effects[effectIndex].Activate();
-        }
-
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:67464659929474193ea40f35aa9852cc7572903e25ed38f8bfde06eb5f44a28c
+size 591

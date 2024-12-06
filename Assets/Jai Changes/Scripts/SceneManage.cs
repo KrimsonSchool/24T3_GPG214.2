@@ -1,35 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class SceneManage : MonoBehaviour
-{
-    public string sceneName;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    public IEnumerator LoadScene(string scene)
-    {
-        SceneManager.LoadScene(scene);
-        yield return null;
-    }
-
-    public void CallLoadScene(string scene)
-    {
-        if(sceneName != null)
-        {
-            scene = sceneName;
-        }
-        StartCoroutine(LoadScene(scene));
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7869e44b3e4924bb433761f93ae2a494de3cdf5725408e467195f7da1e2b4ddd
+size 678

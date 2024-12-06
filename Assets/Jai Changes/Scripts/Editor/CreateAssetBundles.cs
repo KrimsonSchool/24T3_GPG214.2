@@ -1,24 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using UnityEditor;
-using UnityEngine;
-
-public class CreateAssetBundles
-{
-    [MenuItem("Build/Build Asset Bundles")]
-    static void BuildAssetBundles()
-    {
-        string assetBundleDir = "Assets/AssetBundles";
-        string assetBundleDir2 = Path.Combine(Application.streamingAssetsPath, "DLC"); //for testing
-
-        if (!Directory.Exists(assetBundleDir))
-        {
-            Directory.CreateDirectory(assetBundleDir);
-        }
-
-        BuildPipeline.BuildAssetBundles(assetBundleDir, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows);
-
-        BuildPipeline.BuildAssetBundles(assetBundleDir2, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows);//for testing
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b58febc0c145a6a7cadc22c90f1bb6de3faaf4de9149931941c89e70c74a7645
+size 775

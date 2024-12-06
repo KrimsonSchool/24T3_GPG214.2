@@ -1,13 +1,3 @@
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-[TrackColor(0.8970588f, 0.6037406f, 0.07915227f)]
-[TrackClipType(typeof(AudioSnapshotClip))]
-public class AudioSnapshotTrack : TrackAsset
-{
-    public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
-    {
-        return ScriptPlayable<AudioSnapshotMixerBehaviour>.Create (graph, inputCount);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad5a22fe6fd9c1cdeafb5d1d871e5243fb42e81d9c5ec671596e4c3df3a41bed
+size 416

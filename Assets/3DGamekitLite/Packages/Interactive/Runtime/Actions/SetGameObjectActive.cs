@@ -1,18 +1,3 @@
-using UnityEngine;
-
-
-namespace Gamekit3D.GameCommands
-{
-
-    public class SetGameObjectActive : GameCommandHandler
-    {
-        public GameObject[] targets;
-        public bool isEnabled = true;
-
-        public override void PerformInteraction()
-        {
-            foreach (var g in targets)
-                g.SetActive(isEnabled);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f6ce1414537f3dd5687a1a391dfee58614be88eb39edf25afdb2fed36303822
+size 354

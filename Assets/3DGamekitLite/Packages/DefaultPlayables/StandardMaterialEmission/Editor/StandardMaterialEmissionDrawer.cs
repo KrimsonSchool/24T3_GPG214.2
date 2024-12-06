@@ -1,20 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-[CustomPropertyDrawer(typeof(StandardMaterialEmissionBehaviour))]
-public class StandardMaterialEmissionDrawer : PropertyDrawer
-{
-    public override float GetPropertyHeight (SerializedProperty property, GUIContent label)
-    {
-        int fieldCount = 2;
-        return fieldCount * EditorGUIUtility.singleLineHeight;
-    }
-
-    public override void OnGUI (Rect position, SerializedProperty property, GUIContent label)
-    {
-        SerializedProperty ColorProp = property.FindPropertyRelative("color");
-
-        Rect singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
-        EditorGUI.PropertyField(singleFieldRect, ColorProp);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b91d40d86fbdf1ebddbdf6b96aef980ad439d26ea411491165b20e3236eb2d3
+size 729

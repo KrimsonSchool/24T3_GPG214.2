@@ -1,22 +1,3 @@
-<!-- Copyright (C) 2019 Google Inc. All Rights Reserved.
-
-FirebaseStorage iOS and Android Dependencies.
--->
-
-<dependencies>
-  <iosPods>
-    <iosPod name="Firebase/Storage" version="11.4.2" minTargetSdk="13.0">
-    </iosPod>
-  </iosPods>
-  <androidPackages>
-    <androidPackage spec="com.google.firebase:firebase-storage:21.0.1">
-    </androidPackage>
-    <androidPackage spec="com.google.firebase:firebase-analytics:22.1.2">
-    </androidPackage>
-    <androidPackage spec="com.google.firebase:firebase-storage-unity:12.4.0">
-      <repositories>
-        <repository>Assets/Firebase/m2repository</repository>
-      </repositories>
-    </androidPackage>
-  </androidPackages>
-</dependencies>
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa476e5747400b2ea617560fa2a6ee1f8be10c851121b010ecb991d65604377b
+size 689

@@ -1,19 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class ChomperSMBHit : SceneLinkedSMB<ChomperBehavior>
-    {
-        public override void OnSLStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            animator.ResetTrigger(ChomperBehavior.hashAttack);
-        }
-
-        public override void OnSLStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            m_MonoBehaviour.controller.ClearForce();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f1ddc91f6638ee0feddabae7218af75cb80f554c090dd8dc125575f962f4c293
+size 555

@@ -1,18 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    [DefaultExecutionOrder(9999)]
-    public class FixedUpdateFollow : MonoBehaviour
-    {
-        public Transform toFollow;
-
-        private void FixedUpdate()
-        {
-            transform.position = toFollow.position;
-            transform.rotation = toFollow.rotation;
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ef348245880b2148c6027213f0fc60347c12dd110b69424365076f64ef29f8b3
+size 400

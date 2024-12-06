@@ -1,8 +1,3 @@
-{
-    "name": "NavMeshComponents",
-    "references": [],
-    "optionalUnityReferences": [],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:492c566a8fac4a1b40a81c3cf1d2dd8a4265f95590a5f00e8cc434e754dbbd42
+size 178

@@ -1,17 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class Spinner : MonoBehaviour
-    {
-        public Vector3 axis = Vector3.up;
-        public float speed = 1;
-
-        void Update()
-        {
-            transform.Rotate(axis, speed * Time.deltaTime);
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd46d8630aee2ddb3c14067ce82daf1ec6a7d5a1b4b22edf6859c8b8e34d0494
+size 338

@@ -1,24 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class RigidbodyDelayedForce : MonoBehaviour
-    {
-        public Vector3 forceToAdd;
-
-        private void Start()
-        {
-            Rigidbody[] rigidbodies = gameObject.GetComponentsInChildren<Rigidbody>();
-
-            for (int i = 0; i < rigidbodies.Length; ++i)
-            {
-                rigidbodies[i].maxAngularVelocity = 45;
-                rigidbodies[i].angularVelocity = transform.right * -45.0f;
-                rigidbodies[i].velocity = forceToAdd;
-
-            }
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:19ce04c275f2d4f2272f56f567860c46bbd85d3e2ea05defe08d16626d29e4c0
+size 619

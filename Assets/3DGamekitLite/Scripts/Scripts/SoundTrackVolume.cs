@@ -1,30 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class SoundTrackVolume : MonoBehaviour
-    {
-        public LayerMask layers;
-        SoundTrack soundTrack;
-
-        void OnEnable()
-        {
-            soundTrack = GetComponentInParent<SoundTrack>();
-        }
-
-        void OnTriggerEnter(Collider other)
-        {
-            if (0 != (layers.value & 1 << other.gameObject.layer))
-                soundTrack.PushTrack(this.name);
-        }
-
-        void OnTriggerExit(Collider other)
-        {
-            if (0 != (layers.value & 1 << other.gameObject.layer))
-                soundTrack.PopTrack();
-        }
-
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cae04403543a6717b88ff50a48ae850ecb5d5113481919b962c5e697a6898cf6
+size 691

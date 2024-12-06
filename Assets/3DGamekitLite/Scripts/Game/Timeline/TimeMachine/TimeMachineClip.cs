@@ -1,34 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-[Serializable]
-public class TimeMachineClip : PlayableAsset, ITimelineClipAsset
-{
-	[HideInInspector]
-    public TimeMachineBehaviour template = new TimeMachineBehaviour ();
-
-	public TimeMachineBehaviour.TimeMachineAction action;
-	public TimeMachineBehaviour.Condition condition;
-	public string markerToJumpTo = "", markerLabel = "";
-	public float timeToJumpTo = 0f;
-
-    public ClipCaps clipCaps
-    {
-        get { return ClipCaps.None; }
-    }
-
-    public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
-    {
-        var playable = ScriptPlayable<TimeMachineBehaviour>.Create (graph, template);
-        TimeMachineBehaviour clone = playable.GetBehaviour ();
-		clone.markerToJumpTo = markerToJumpTo;
-		clone.action = action;
-		clone.condition = condition;
-		clone.markerLabel = markerLabel;
-		clone.timeToJumpTo = timeToJumpTo;
-
-        return playable;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d81d42bb82f4304e464ec4b8c50d14310f87cb0d233ad6db8d076bd9f4930b98
+size 980

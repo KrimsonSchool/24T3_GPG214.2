@@ -1,10 +1,3 @@
-newmtl tetra_sail0
-Ns -3.921569
-Ka 1.000000 1.000000 1.000000
-Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni -1.000000
-d 1.000000
-illum 2
-map_Kd tetra_sail.png
+version https://git-lfs.github.com/spec/v1
+oid sha256:be1fdccc30f6d4922142ed245ca3826c29c6e8671cc5ad660241629467e52f5a
+size 206

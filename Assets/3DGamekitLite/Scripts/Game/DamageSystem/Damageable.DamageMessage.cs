@@ -1,18 +1,3 @@
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public partial class Damageable : MonoBehaviour
-    {
-        public struct DamageMessage
-        {
-            public MonoBehaviour damager;
-            public int amount;
-            public Vector3 direction;
-            public Vector3 damageSource;
-            public bool throwing;
-
-            public bool stopCamera;
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0c27cc538745b4b0fde2e6cb8ded8a12b903ac84b9c4bc9b8c9d1be6f921789
+size 388

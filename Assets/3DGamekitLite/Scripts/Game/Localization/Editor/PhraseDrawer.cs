@@ -1,28 +1,3 @@
-﻿using UnityEditor;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    [CustomPropertyDrawer(typeof(Phrase))]
-    public class PhraseDrawer : PropertyDrawer
-    {
-        public override float GetPropertyHeight (SerializedProperty property, GUIContent label)
-        {
-            return EditorGUIUtility.singleLineHeight;
-        }
-
-        public override void OnGUI (Rect position, SerializedProperty property, GUIContent label)
-        {
-            SerializedProperty keyProp = property.FindPropertyRelative ("key");
-            SerializedProperty valueProp = property.FindPropertyRelative ("value");
-
-            Rect propertyRect = position;
-            propertyRect.width *= 0.25f;
-            EditorGUI.PropertyField(propertyRect, keyProp, GUIContent.none);
-
-            propertyRect.x += propertyRect.width;
-            propertyRect.width *= 3f;
-            EditorGUI.PropertyField(propertyRect, valueProp, GUIContent.none);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f4826358117d6895123908f929632faddf3d1c24639859a5acfb62d6bf801324
+size 949

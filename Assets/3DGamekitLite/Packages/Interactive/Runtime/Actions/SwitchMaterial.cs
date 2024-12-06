@@ -1,18 +1,3 @@
-using UnityEngine;
-
-
-namespace Gamekit3D.GameCommands
-{
-    public class SwitchMaterial : GameCommandHandler
-    {
-        public Renderer target;
-        public Material[] materials;
-        int count;
-
-        public override void PerformInteraction()
-        {
-            count++;
-            target.material = materials[count % materials.Length];
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f703a2a8960ac51d7436cfdf1bba7c403328d19ad36d34058dbf6a718386bddd
+size 370

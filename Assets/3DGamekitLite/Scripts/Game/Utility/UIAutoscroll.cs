@@ -1,32 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace Gamekit3D
-{
-    public class UIAutoscroll : MonoBehaviour
-    {
-
-        public ScrollRect scrollRect;
-        public Scrollbar scrollbar;
-        public float scrollValue;
-        public float duration = 30.0f;
-
-        void OnEnable()
-        {
-            StartCoroutine(Scroller());
-        }
-
-        IEnumerator Scroller()
-        {
-            var t = 0.0f;
-            while (true)
-            {
-                t += Time.deltaTime / duration;
-                scrollRect.verticalNormalizedPosition = 1 - Mathf.PingPong(t, 1);
-                yield return null;
-            }
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:15f19020020f57e81b115415482d35e5e4bfc6c9e27d3d201d09a78e3c560576
+size 717

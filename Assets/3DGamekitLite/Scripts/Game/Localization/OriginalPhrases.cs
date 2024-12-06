@@ -1,34 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    [CreateAssetMenu]
-    public class OriginalPhrases : ScriptableObject
-    {
-        public string language;
-        public List<Phrase> phrases = new List<Phrase>();
-
-        public string this[string key]
-        {
-            get
-            {
-                for (int i = 0; i < phrases.Count; i++)
-                {
-                    if (phrases[i].key == key)
-                        return phrases[i].value;
-                }
-
-                return "Key not found.";
-            }
-        }
-    }
-
-    [Serializable]
-    public class Phrase
-    {
-        public string key;
-        public string value;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:508fd94183abb4bea66c5d61c5b9eb0fec39b2a70c5aada6f04c0c4010ec516d
+size 716

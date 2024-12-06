@@ -1,26 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class ChomperSMBReturn : SceneLinkedSMB<ChomperBehavior>
-    {
-        public override void OnSLStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            m_MonoBehaviour.WalkBackToBase();
-        }
-
-        public override void OnSLStateNoTransitionUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            base.OnSLStateNoTransitionUpdate(animator, stateInfo, layerIndex);
-
-            m_MonoBehaviour.FindTarget();
-
-            if(m_MonoBehaviour.target != null)
-                m_MonoBehaviour.StartPursuit(); // if the player got back in our vision range, resume pursuit!
-            else 
-                m_MonoBehaviour.WalkBackToBase();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0b8df786dd1119e8b4a772f692cbccf0063adee30e9ce1075773f27c032d6bf
+size 851

@@ -1,31 +1,3 @@
-{
-  "data": {
-    "names": [ "hl_wall", "hl_door", "hl_trigger"],
-    "objects": [
-      {
-        "texture": "hl_patina",
-        "scale": {
-          "x": 3,
-          "y": 4,
-          "z": 0.5
-        }
-      },
-      {
-        "scale": {
-          "x": 3,
-          "y": 4,
-          "z": 0.25
-        },
-        "texture": "hl_steel"
-      },
-      {
-        "scale": {
-          "x": 5,
-          "y": 5,
-          "z": 5
-        },
-        "texture": "hl_trigger"
-      }
-    ]
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6348f66d5a828e6a035bb78f184e1b79ac91521c15d807d6e3f47073af200a62
+size 492

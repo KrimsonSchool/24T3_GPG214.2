@@ -1,19 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-
-namespace Gamekit3D
-{
-    public class SetCursorMode : MonoBehaviour
-    {
-        public bool visible = true;
-        public CursorLockMode lockMode = CursorLockMode.None;
-
-        void Start()
-        {
-            Cursor.visible = visible;
-            Cursor.lockState = lockMode;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c0812f0b4e1acff3e60fb155a7fc7fe8f314297864d81c5dc6e32060763a146
+size 385

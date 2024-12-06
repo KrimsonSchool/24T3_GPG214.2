@@ -1,11 +1,3 @@
-fileFormatVersion: 2
-guid: 2ca72cf1cc41419db967300cf572ceed
-labels:
-- gvh
-- gvh_version-12.4.0
-- gvhp_exportpath-Firebase/m2repository/com/google/firebase/firebase-app-unity/12.4.0/firebase-app-unity-12.4.0.srcaar
-timeCreated: 1480838400
-DefaultImporter:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4277f281d3326b48bbe6ab79a736128f5e4af906468a6e960a4428ddc8ced11
+size 308

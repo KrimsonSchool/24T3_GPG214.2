@@ -1,26 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    [ExecuteInEditMode]
-    public class WaterRipple : MonoBehaviour
-    {
-
-        Material mat;
-        public Transform offsetPos;
-
-        // Use this for initialization
-        void Start()
-        {
-            mat = GetComponent<MeshRenderer>().material;
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            mat.SetVector("_UVOffset", new Vector4(offsetPos.position.x, 0, offsetPos.position.z, 1));
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f16211e51a6c8ad2bce726178ca3e06a506f7497393e3e76f362ad24d5b52950
+size 575

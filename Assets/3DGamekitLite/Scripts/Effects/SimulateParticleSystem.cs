@@ -1,26 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-/// <summary>
-/// Assures the particle systems are simulating once.
-/// </summary>
-
-namespace Gamekit3D
-{
-    public class SimulateParticleSystem : MonoBehaviour
-    {
-
-        public ParticleSystem[] systems;
-
-        private void OnEnable()
-        {
-            for (int i = 0; i < systems.Length; i++)
-            {
-                if (!systems[i].isPlaying)
-                    systems[i].Simulate(0f);
-            }
-
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f73ebbcc196106f933c9f040caba02a1ce8b79ec96b1a5a00ca6da375a6b8144
+size 525

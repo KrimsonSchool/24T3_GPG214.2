@@ -1,35 +1,3 @@
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-using System.Collections.Generic;
-
-[TrackColor(0.1634948f, 0.7941176f, 0.4548861f)]
-[TrackClipType(typeof(SetLocationClip))]
-[TrackBindingType(typeof(Transform))]
-public class SetLocationTrack : TrackAsset
-{
-    public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
-    {
-        return ScriptPlayable<SetLocationMixerBehaviour>.Create (graph, inputCount);
-    }
-
-    public override void GatherProperties (PlayableDirector director, IPropertyCollector driver)
-    {
-#if UNITY_EDITOR
-        Transform trackBinding = director.GetGenericBinding(this) as Transform;
-        if (trackBinding == null)
-            return;
-
-        var serializedObject = new UnityEditor.SerializedObject (trackBinding);
-        var iterator = serializedObject.GetIterator();
-        while (iterator.NextVisible(true))
-        {
-            if (iterator.hasVisibleChildren)
-                continue;
-
-            driver.AddFromName<Transform>(trackBinding.gameObject, iterator.propertyPath);
-        }
-#endif
-        base.GatherProperties (director, driver);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:62b7a726768a11e11f3e8de02e4fc56767512c89e4b15ad1eeec85ef1ecabf54
+size 1161

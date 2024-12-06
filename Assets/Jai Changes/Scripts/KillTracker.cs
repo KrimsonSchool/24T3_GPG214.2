@@ -1,27 +1,3 @@
-using Gamekit3D;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class KillTracker : MonoBehaviour
-{
-    Damageable damageable;
-    bool hasDied;
-    // Start is called before the first frame update
-    void Start()
-    {
-        damageable = GetComponent<Damageable>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (damageable.currentHitPoints <= 0 && !hasDied)
-        {
-            print("Got Kill!");
-            PlayerPrefs.SetInt("Achievment0", PlayerPrefs.GetInt("Achievment0") + 1);
-            FindObjectOfType<Database>().currentData.achievmentLevels[0]++;
-            hasDied = true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fcf4844d7624ea1d38f38a84052bcc6eaf47f45351541c0d0ea27b7f6fa1c18d
+size 688

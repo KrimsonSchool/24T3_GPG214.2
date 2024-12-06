@@ -1,32 +1,3 @@
-ManifestFileVersion: 0
-CRC: 1287977259
-Hashes:
-  AssetFileHash:
-    serializedVersion: 2
-    Hash: b9b32b4ce40ae7412e564daa2b66e993
-  TypeTreeHash:
-    serializedVersion: 2
-    Hash: 045213c52eecc7aeba131c62b418c535
-  IncrementalBuildHash:
-    serializedVersion: 2
-    Hash: b9b32b4ce40ae7412e564daa2b66e993
-HashAppended: 0
-ClassTypes:
-- Class: 1
-  Script: {instanceID: 0}
-- Class: 4
-  Script: {instanceID: 0}
-- Class: 21
-  Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
-- Class: 43
-  Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
-- Class: 137
-  Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
-Assets:
-- Assets/Jai Changes/DLC/Weapons/w_woodenstaff.prefab
-Dependencies: []
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f859b5645ebc415df7e03eb90ee9648e90ce9d1e4b5fbc29450e167c0bd1feb
+size 719

@@ -1,10 +1,3 @@
-{
-    "name": "PackageManagerCheck",
-    "references": [],
-    "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b44d98b367c8ec0019b6d44047e5c54136f9e961e112c93c809cb460c0190dd
+size 202

@@ -1,20 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class SpitterSMBFleeing : SceneLinkedSMB<SpitterBehaviour>
-    {
-        public override void OnSLStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            m_MonoBehaviour.controller.SetFollowNavmeshAgent(true);
-        }
-
-        public override void OnSLStateNoTransitionUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            m_MonoBehaviour.FindTarget();
-            m_MonoBehaviour.CheckNeedFleeing();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d6f5b4eb8acf57f076892445371e61cf1ae6119f9ed2fdae128b249333c863a
+size 616

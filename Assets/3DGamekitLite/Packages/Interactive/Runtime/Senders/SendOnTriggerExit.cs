@@ -1,21 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D.GameCommands
-{
-
-    public class SendOnTriggerExit : TriggerCommand
-    {
-        public LayerMask layers;
-
-        void OnTriggerExit(Collider other)
-        {
-            if (0 != (layers.value & 1 << other.gameObject.layer))
-            {
-                Send();
-            }
-        }
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:15ade1a31a09c437b3a26b39dcb1a79f7a1a043136eea005ff4791cbb983cf30
+size 399

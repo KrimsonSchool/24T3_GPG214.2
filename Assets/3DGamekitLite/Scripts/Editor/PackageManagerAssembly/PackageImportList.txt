@@ -1,4 +1,3 @@
-com.unity.postprocessing@2.0.9-preview
-com.unity.cinemachine@2.2.0
-com.unity.probuilder@3.0.9
-com.unity.textmeshpro@1.2.4
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad48b8a739408e815ecca8d9c209b0cae6181c9eefa291b26ca06ccb8a35d000
+size 122

@@ -1,24 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-[Serializable]
-public class CutsceneScriptControlClip : PlayableAsset, ITimelineClipAsset
-{
-    public ExposedReference<PlayerInput> playerInput;
-    public CutsceneScriptControlBehaviour template = new CutsceneScriptControlBehaviour();
-    
-    public ClipCaps clipCaps
-    {
-        get { return ClipCaps.None; }
-    }
-
-    public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
-    {
-        var playable = ScriptPlayable<CutsceneScriptControlBehaviour>.Create (graph, template);
-        CutsceneScriptControlBehaviour clone = playable.GetBehaviour ();
-        clone.playerInput = playerInput.Resolve (graph.GetResolver ());
-        return playable;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ca09de58731fbd72b957f42f1c355969cc99caec4bc71c91c840f3c61ca6c78
+size 777

@@ -1,21 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-[Serializable]
-public class SetLocationClip : PlayableAsset, ITimelineClipAsset
-{
-    public SetLocationBehaviour template = new SetLocationBehaviour ();
-
-    public ClipCaps clipCaps
-    {
-        get { return ClipCaps.None; }
-    }
-
-    public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
-    {
-        var playable = ScriptPlayable<SetLocationBehaviour>.Create (graph, template);
-        return playable;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1402cc4c2c39e24d1c81384ac41800a85a8afd6b0ed7c7001c92cf21fadfd7f4
+size 535

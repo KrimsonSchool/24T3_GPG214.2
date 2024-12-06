@@ -1,32 +1,3 @@
-ManifestFileVersion: 0
-CRC: 1380402894
-Hashes:
-  AssetFileHash:
-    serializedVersion: 2
-    Hash: 3f3daf29defc17c8e5dc92aa524bcbe1
-  TypeTreeHash:
-    serializedVersion: 2
-    Hash: 045213c52eecc7aeba131c62b418c535
-  IncrementalBuildHash:
-    serializedVersion: 2
-    Hash: 3f3daf29defc17c8e5dc92aa524bcbe1
-HashAppended: 0
-ClassTypes:
-- Class: 1
-  Script: {instanceID: 0}
-- Class: 4
-  Script: {instanceID: 0}
-- Class: 21
-  Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
-- Class: 43
-  Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
-- Class: 137
-  Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
-Assets:
-- Assets/Jai Changes/DLC/Weapons/w_futuresword.prefab
-Dependencies: []
+version https://git-lfs.github.com/spec/v1
+oid sha256:548a4ec96ff5d58b4b281850d083f9c95b7365001bcf605f5293a4481f1becdd
+size 719

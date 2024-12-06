@@ -1,21 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D.GameCommands
-{
-
-    public class SendOnCollisionEnter : SendGameCommand
-    {
-        public LayerMask layers;
-
-        void OnCollisionEnter(Collision collision)
-        {
-            if (0 != (layers.value & 1 << collision.gameObject.layer))
-            {
-                Send();
-            }
-        }
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d9c443f09a71962874bd6c77f3f32ca560c8d65443ac9075112f565fcdc0a0a
+size 415

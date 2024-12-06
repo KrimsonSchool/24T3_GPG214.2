@@ -1,22 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Animations;
-
-namespace Gamekit3D
-{
-    public class ReplaceWithRagdollSMB : StateMachineBehaviour
-    {
-        public override void OnStateMachineExit(Animator animator, int stateMachinePathHash)
-        {
-            ReplaceWithRagdoll replacer = animator.GetComponent<ReplaceWithRagdoll>();
-            replacer.Replace();
-        }
-
-        public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            ReplaceWithRagdoll replacer = animator.GetComponent<ReplaceWithRagdoll>();
-            replacer.Replace();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d53a15607be30e9da99d5994a411dd841a042216a44e0ec8873b8782a3a64c78
+size 688

@@ -1,16 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-
-namespace Gamekit3D
-{
-    public class GrenadierSMBPunch : SceneLinkedSMB<GrenadierBehaviour>
-    {
-        public override void OnSLStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            if (m_MonoBehaviour.punchAudioPlayer)
-                m_MonoBehaviour.punchAudioPlayer.PlayRandomClip();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:769f72a8825ac52c898cccfc576c1dea8a915b967148ee7894491d64e089cb63
+size 436

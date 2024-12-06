@@ -1,30 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    [ExecuteInEditMode]
-    public class SunSkybox : MonoBehaviour
-    {
-        public Material skyboxMaterial;
-        int sunDirId, sunColorId;
-        Light sun;
-
-        void Awake()
-        {
-            sun = GetComponent<Light>();
-            sunDirId = Shader.PropertyToID("_SunDirection");
-            sunColorId = Shader.PropertyToID("_SunColor");
-        }
-
-        void Update()
-        {
-            if (skyboxMaterial)
-            {
-                skyboxMaterial.SetVector(sunDirId, -transform.forward.normalized);
-                skyboxMaterial.SetColor(sunColorId, sun.color);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eeb74cd997a567fce8bb0e778e8ab0cad206e244ce766237f2b7ea5987da9cb5
+size 731

@@ -1,14 +1,3 @@
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-[TrackColor(0.7794118f, 0.02865483f, 0.02865483f)]
-[TrackClipType(typeof(SceneReloaderClip))]
-[TrackBindingType(typeof(GameObject))]
-public class SceneReloaderTrack : TrackAsset
-{
-    public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
-    {
-        return ScriptPlayable<SceneReloaderMixerBehaviour>.Create (graph, inputCount);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ca01dd389b46ff02a4af20e2526d3eb13d9e86a0dcb55346490cc3a0fea99d1
+size 456

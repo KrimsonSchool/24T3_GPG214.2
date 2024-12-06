@@ -1,4 +1,3 @@
--- Ripped by Slipsy --
-Thanks to Foas, Lurker, Chaotic and the rest of GFI
-
-oh i'm sorry, were you looking for a shader setup? ahaha, your guess is as good as mine, have fun~
+version https://git-lfs.github.com/spec/v1
+oid sha256:ebb3840d63a7ba07a888652b501d6e244b8c3a10d9f22d7264b304f7da95724a
+size 174

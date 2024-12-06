@@ -1,20 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    public class EllenSetTargetableSMB : StateMachineBehaviour
-    {
-        // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-        override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-        {
-            PlayerController controller = animator.GetComponent<PlayerController>();
-
-            if (controller != null)
-            {
-                controller.RespawnFinished();
-            }
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9064723cc1853affdc2949335872b5b9ea54ea836bfb05caac624b97941b232b
+size 613

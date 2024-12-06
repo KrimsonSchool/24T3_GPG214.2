@@ -1,24 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
-
-[Serializable]
-public class AudioSnapshotClip : PlayableAsset, ITimelineClipAsset
-{
-    public ExposedReference<AudioSource> audioSource;
-    public AudioSnapshotBehaviour template = new AudioSnapshotBehaviour ();
-
-    public ClipCaps clipCaps
-    {
-        get { return ClipCaps.All; }
-    }
-
-    public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
-    {
-        var playable = ScriptPlayable<AudioSnapshotBehaviour>.Create (graph, template);
-        AudioSnapshotBehaviour clone = playable.GetBehaviour ();
-        clone.audioSource = audioSource.Resolve (graph.GetResolver ());
-        return playable;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34bdee53fd8b98510ddbfb1d529600d673c486f3aa86165a5267aa23f39a70a7
+size 733

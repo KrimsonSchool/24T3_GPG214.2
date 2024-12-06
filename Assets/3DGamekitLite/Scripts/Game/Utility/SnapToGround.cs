@@ -1,24 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gamekit3D
-{
-    [ExecuteInEditMode]
-    public class SnapToGround : MonoBehaviour
-    {
-        public LayerMask layerMask;
-
-        void OnDrawGizmosSelected()
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position + (Vector3.up * 10), Vector3.down, out hit, 1000, layerMask.value))
-            {
-                if (hit.collider.gameObject != gameObject)
-                {
-                    Gizmos.DrawLine(transform.position, hit.point);
-                }
-            }
-        }
-    } 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:032e74f5468056ef211145a006d16a9cf34df6386999e3408f66120c1cbc620f
+size 621
