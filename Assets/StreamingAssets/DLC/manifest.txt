@@ -1,0 +1,1 @@
+theport,w_bustersword,w_flameguitar,w_futuresword,w_giantspanner,w_woodenstaff

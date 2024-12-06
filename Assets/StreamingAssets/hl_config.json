@@ -1,0 +1,31 @@
+{
+  "data": {
+    "names": [ "hl_wall", "hl_door", "hl_trigger"],
+    "objects": [
+      {
+        "texture": "hl_patina",
+        "scale": {
+          "x": 3,
+          "y": 4,
+          "z": 0.5
+        }
+      },
+      {
+        "scale": {
+          "x": 3,
+          "y": 4,
+          "z": 0.25
+        },
+        "texture": "hl_steel"
+      },
+      {
+        "scale": {
+          "x": 5,
+          "y": 5,
+          "z": 5
+        },
+        "texture": "hl_trigger"
+      }
+    ]
+  }
+}

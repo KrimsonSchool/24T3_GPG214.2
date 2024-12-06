@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1345379175
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: theport
+      Dependencies: {}
+    Info_1:
+      Name: w_bustersword
+      Dependencies: {}
+    Info_2:
+      Name: w_flameguitar
+      Dependencies: {}
+    Info_3:
+      Name: w_futuresword
+      Dependencies: {}
+    Info_4:
+      Name: w_giantspanner
+      Dependencies: {}
+    Info_5:
+      Name: w_woodenstaff
+      Dependencies: {}
